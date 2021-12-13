@@ -2,66 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tạo Form đơn giản phần 2</title>
+    <title>[Thực hành] Tạo bảng cơ bản</title>
 </head>
 <body>
-<form action="https://www.google.com/search" method="get">
-    <table style="background: lemonchiffon;width: 40% ">
-        <tr>
-            <th align="right" colspan="3" >
-                <h3 style="background: #8dff7c; color: blue" align="left">ĐĂNG KÍ HỌC VIÊN</h3>
-            </th>
-        </tr>
+<style>
+    table,td {border-collapse: collapse; border: 0.5px solid; text-align: center}
+    th {border-collapse: collapse; border: 0.5px solid white; text-align: center}
+    .cellbackground {background-color: red}
 
-        <tr>
-            <td style="color: blue">Họ và tên</td>
-            <td colspan="2"> <input type="text" size="30px"> </td>
-        </tr>
+</style>
+<table width="500" cellpadding="5">
+    <tr class="cellbackground">
+        <th rowspan="2">Thứ</th>
+        <th colspan="2">Hoạt động</th>
+    </tr>
+    <tr class="cellbackground">
+        <th>Sáng</th>
+        <th>Chiều</th>
+    </tr>
+    <tr>
+        <td>Thứ hai</td>
+        <td>Thể dục</td>
+        <td>HD trò chơi mới</td>
+    </tr>
+    <tr>
+        <td>Thứ 3</td>
+        <td>Nhận biết tập nói</td>
+        <td>Rèn nề nếp, kỹ năng sống</td>
+    </tr>
+    <tr>
+        <td>Thứ 4</td>
+        <td>Âm nhạc</td>
+        <td>Vui chơi</td>
+    </tr>
+    <tr>
+        <td>Thứ năm</td>
+        <td>Văn học</td>
+        <td>Nhận biết các giá trị sống</td>
+    </tr>
 
-        <tr>
-            <td style="color: blue">Ngày sinh</td>
-            <td colspan="2"> <input type="text" size="15px"> </td>
-        </tr>
-
-        <tr>
-            <td style="color: blue">Giới tính</td>
-            <td> <input type="radio" name="gioitinh" id="nam"> <label for="nam">Nam</label>
-                <input type="radio" name="gioitinh" id="nu" > <label for="nu">Nữ</label>
-            </td>
-        </tr>
-
-        <tr>
-            <td style="color: blue">Địa chỉ</td>
-            <td> <textarea rows="3" cols="20"></textarea> </td>
-        </tr>
-
-        <tr>
-            <td style="color: blue">Lớp</td>
-            <td colspan="2" align="left"> <select>
-                <option>--Chợn lớp--</option>
-                <option>Lớp 1</option>
-                <option>Lớp 2</option>
-                <option>Lớp 3</option>
-                <option>Lớp 4</option>
-                <option>Lớp 5</option>
-            </select> </td>
-        </tr>
-
-        <tr>
-            <td style="color: blue">Email</td>
-            <td colspan="2"> <input type="text" size="20px"> </td>
-        </tr>
-
-        <tr>
-            <td style="color: blue" rowspan="2">Điện thoại</td>
-            <td colspan="2"> <input type="text" size="20px"> </td>
-        </tr>
-
-        <tr>
-            <td><input type="submit" value="Đăng kí">
-                <input type="reset" value="Nhập lại"> </td>
-        </tr>
-    </table>
-</form>
+</table>
 </body>
 </html>
